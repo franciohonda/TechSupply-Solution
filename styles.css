@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra il testo */
+    padding-top: 80px;
+    background-color: #d9f3ff;
+}
+
+header {
+    background-color: #192c40; /* Sfondo verde trasparente */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ombra per un effetto moderno */
+    display: flex; /* Usa Flexbox per allineare gli elementi */
+    align-items: center; /* Allinea verticalmente al centro */
+    position: fixed; /* Rende la barra fissa */
+    top: 0; /* Posiziona in alto */
+    left: 0; /* Posiziona a sinistra */
+    right: 0; /* Posiziona a destra */
+    z-index: 1000; /* Assicura che la barra sia sopra altri contenuti */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transizione per l'effetto di animazione */
+}
+
+.logo-container {
+    display: flex; /* Usa Flexbox per il contenitore del logo */
+    align-items: center; /* Allinea verticalmente al centro */
+}
+
+.logo {
+    width: 50px; /* Imposta una larghezza per il logo */
+    height: auto; /* Mantiene le proporzioni del logo */
+    margin-right: 10px; /* Spazio tra logo e nome dell'azienda */
+    margin-right: 60px;
+}
+
+.company-name {
+    font-size: 1.5em; /* Dimensione del nome dell'azienda */
+}
+html {
+    scroll-behavior: smooth; /* Abilita lo scorrimento fluido */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; /* Rimuove il padding predefinito */
+    margin-left: auto; /* Sposta la nav a destra */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Testo in grassetto */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transizione per l'effetto hover */
+}
+
+nav ul li a:hover {
+    color: white; /* Colore più chiaro al passaggio del mouse */
+    border-bottom: 2px solid white; /* Sottolineatura al passaggio del mouse */
+}
+
+.slider {
+    position: relative;
+    max-width: 600px; /* Imposta la larghezza massima dello slider */
+    margin: auto;
+    width: 500px;  /* Imposta la larghezza desiderata */
+    height: 400px; /* Imposta l'altezza desiderata */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transizione fluida */
+}
+
+.slide {
+    min-width: 100%; /* Ogni slide occupa il 100% della larghezza dello slider */
+    display: flex;               /* Abilita Flexbox */
+    margin-top: 100px;
+    justify-content: center;     /* Centra orizzontalmente */
+    align-items: center;         /* Centra verticalmente */
+    height: 100%; 
+}
+
+.slide img {
+    width: 90%; /* L'immagine si adatta alla larghezza dello slide */
+    margin: auto;                /* Applica margini automatici per centrare l'immagine */
+    display: block;              /* Rende l'immagine un elemento a blocco per applicare i margini */
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2.5em; /* Dimensione grande per il titolo principale */
+}
+
+h2 {
+    font-size: 2em; /* Dimensione media per i sottotitoli */
+}
+
+h3 {
+    font-size: 1.3em; /* Dimensione più piccola per i sottotitoli secondari */
+}
+
+p {
+    font-size: 21px; /* Dimensione standard per i paragrafi */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+li{
+    font-size: 19px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    list-style-type: none; /* Rimuove i puntini */
+}
+
+.servizi-list {
+    list-style-type: none; /* Rimuove i punti elenco */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #192c40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #29435f; /* Colore più scuro al passaggio del mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #192c40;
+    color: white;
+}
+#home {
+    background-image: url('core-business-cos-e-significato.jpg'); /* Sostituisci con il percorso della tua immagine */
+    background-size: cover; /* Copre l'intera area della sezione */
+    background-position: center; /* Centra l'immagine */
+    padding: 50px; /* Aggiungi padding per distanziare il contenuto dai bordi */
+    color: white; /* Cambia il colore del testo se necessario per migliorare la leggibilità */
+}
